@@ -17,10 +17,14 @@ int[] CreateArray(int size)
 
 void PrintArray(int[] arr)
 {
-    for (int i = 0; i < arr.Length; i++)
+    Console.Write($"[");
+    for (int i = 0; i + 1 < arr.Length; i++)
     {
+        
         Console.Write($"{arr[i]}, ");
     }
+    Console.Write($"{arr[arr.Length -1]}");
+    Console.Write($"]");
 }
 int[] arr1 = CreateArray(8);
 PrintArray(arr1);
