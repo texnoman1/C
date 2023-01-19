@@ -19,7 +19,7 @@ double LenghtLine(int ax, int ay, int bx, int by)
     
 }
 
-double result = LenghtLine(ax, ay,  bx, by);
+ble result = LenghtLine(ax, ay,  bx, by);
 double resRound = Math.Round(result, 2, MidpointRounding.ToZero);
 
 Console.WriteLine($"Расстояние между точками А и Б -> {resRound}");
