@@ -26,5 +26,37 @@ void PrintArray(int[] arr)
     Console.Write($"{arr[arr.Length -1]}");
     Console.Write($"]");
 }
-int[] arr1 = CreateArray(8);
-PrintArray(arr1);
+
+
+int[] arr = { 0, 5, 4, 3, 2, 1 };
+foreach (double i in arr) { Console.Write("{0} ", i); }
+Console.Write(arr.Length);
+int temp = 2;
+for (int i = 0; i < arr.Length; i++)
+{
+    for (int j = 0; j < arr.Length - 1; j++)
+    {
+
+        if (arr[j] < arr[j + 1])
+        {
+            temp = arr[j];
+            (arr[j]) = (arr[j + 1]);
+            arr[j + 1] = temp;
+        }
+    }
+    
+    }
+    foreach (double i in arr) { Console.Write("{0} ", i); }
+
+
+//int[] arr1 = CreateArray(4);
+//PrintArray(arr1);
+
+//AvgInString(arr);
+//PrintArray(arr);
+
+/*Console.Write("Cреднее арифметическое элементов в каждом столбце -> ");
+ foreach (double i in averageOfEveryColumns) {
+            Console.Write("{0} ", i); }   */
+
+
